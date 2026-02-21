@@ -30,8 +30,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 
 export default function App() {
   return (
-    // Tambahkan basename supaya GitHub Pages tahu base URL
-    <Router basename="/LifeOS-edisi-ramadan">
+    <Router>
       <AuthProvider>
         <NotificationProvider>
           <Routes>

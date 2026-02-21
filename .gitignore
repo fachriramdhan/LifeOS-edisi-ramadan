@@ -1,1 +1,5 @@
 Not found
+.vercel
+
+# Node modules & gh-pages cache
+node_modules/
