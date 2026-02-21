@@ -1,127 +1,20 @@
-Tentu, ini adalah versi `README.md` yang telah dirancang ulang agar terlihat profesional, modern, dan sangat menarik untuk portofolio GitHub Anda. Saya menggunakan elemen visual seperti *badges*, *emojis*, dan struktur yang sangat bersih.
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
----
+# Run and deploy your AI Studio app
 
-```markdown
-# 🌙 MyLifeOS: Ramadan Edition 
-> **Aesthetic Productivity & Islamic Lifestyle Management Web App**
+This contains everything you need to run your app locally.
 
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+View your app in AI Studio: https://ai.studio/apps/bc7717c6-9142-48b4-8582-017b7bc373ae
 
-**MyLifeOS** adalah aplikasi manajemen gaya hidup digital yang dirancang khusus untuk Gen Z. Menggabungkan estetika modern (Neon Lime & Black) dengan fitur spiritual, aplikasi ini membantu pengguna menyeimbangkan produktivitas harian dan ibadah, khususnya selama bulan suci Ramadan.
+## Run Locally
 
+**Prerequisites:**  Node.js
 
 
----
-
-## ✨ Fitur Utama
-
-Aplikasi ini dibangun dengan pendekatan **Mobile-First** dan **Pixel-Perfect Design**:
-
-* **🕋 Ibadah Tracker & Ramadan Mode**: Pelacakan sholat, tilawah (counter), dan target khatam dengan transisi warna cerdas (Emerald Mode).
-* **⚡ Productivity Hub**: Manajemen tugas harian dengan sistem "Level Up" untuk memotivasi pengguna.
-* **💰 Smart Finance & Zakat**: Pencatatan pengeluaran harian dan kalkulator zakat otomatis.
-* **🧭 Tool Sholat**: Jadwal sholat real-time dan kompas arah kiblat interaktif.
-* **📊 Bento Dashboard**: Visualisasi data konsistensi ibadah menggunakan Chart.js.
-
----
-
-## 🛠️ Tech Stack & Standar Pengembangan
-
-Proyek ini wajib memenuhi spesifikasi teknis berikut:
-
-| Kategori | Teknologi |
-| :--- | :--- |
-| **Frontend** | React (Vite) + TypeScript |
-| **Styling** | Tailwind CSS (Pure Utility Classes) |
-| **Animation** | Framer Motion (Micro-interactions) |
-| **Icons** | Lucide React |
-| **Data Viz** | Chart.js + React-chartjs-2 |
-| **Persistence** | LocalStorage API (Mock Backend) |
-| **Date Engine** | Date-fns |
-
----
-
-## 🎨 Design System
-
-Aplikasi menggunakan palet warna kontras tinggi untuk kesan futuristik:
-
-* **Neon Lime (`#ccff00`)**: Aksen utama untuk energi dan fokus.
-* **Deep Black (`#000000`)**: Background utama untuk estetika OLED.
-* **Ramadan Emerald (`#10b981`)**: Digunakan saat "Mode Ramadan" aktif.
-* **Shapes**: Radius besar (`rounded-3xl`) untuk elemen kartu agar terlihat modern.
-
----
-
-## 📂 Struktur Proyek
-
-```bash
-/src
-├── /components      # UI Reusable (Layout, PrayerTimes, Qibla, Zakat)
-├── /context         # Global State (Auth & Notifications)
-├── /pages           # App Pages (Dashboard, Ibadah, Finance, etc.)
-├── /api.ts          # LocalStorage Interceptor
-├── App.tsx          # Main Router
-└── main.tsx         # Entry Point
-
-```
-
----
-
-## 🚀 Cara Menjalankan
-
-1. **Clone Repositori**
-```bash
-git clone [https://github.com/username/mylifeos-ramadan.git](https://github.com/username/mylifeos-ramadan.git)
-cd mylifeos-ramadan
-
-```
-
-
-2. **Instal Dependensi**
-```bash
-npm install
-
-```
-
-
-3. **Jalankan Development Server**
-```bash
-npm run dev
-
-```
-
-
-
----
-
-## 📋 Kriteria Penilaian (QA)
-
-* [ ] **Pixel-Perfect**: Layout sesuai dengan spesifikasi desain bento-grid.
-* [ ] **Responsive**: Tampilan sempurna di layar mobile (Max-width: 448px).
-* [ ] **State Persistence**: Data tidak hilang saat halaman di-refresh.
-* [ ] **Interactive**: Animasi masuk (slide-in/up) pada setiap navigasi halaman.
-
----
-
-## 📝 Catatan Tugas Akhir
-
-Dokumen ini disusun sebagai panduan teknis pengembangan aplikasi. Mahasiswa diharapkan mengikuti standar folder dan teknologi yang telah ditentukan untuk memastikan skalabilitas dan kebersihan kode.
-
-**Selamat Berkreasi!** ✨
-
-```
-
----
-
-### Tips Tambahan untuk GitHub:
-1.  **Screenshot**: Pastikan Anda mengambil screenshot aplikasi Anda dan mengganti bagian `[Image of...]` dengan link gambar tersebut agar pembaca bisa langsung melihat hasilnya.
-2.  **Live Demo**: Jika memungkinkan, deploy ke **Vercel** atau **Netlify** dan tambahkan link "Live Demo" di bagian atas.
-3.  **License**: Tambahkan file LICENSE (misal: MIT) agar repo Anda terlihat lebih resmi.
-
-**Apakah Anda ingin saya membantu membuatkan contoh kode untuk salah satu komponen spesifik (seperti kompas Kiblat atau Bento Grid-nya)?**
-
-```
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
